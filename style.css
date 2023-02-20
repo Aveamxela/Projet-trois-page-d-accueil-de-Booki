@@ -1,0 +1,50 @@
+:root {
+    --primary-color: #0065fc;
+    --selection-color:#deebff;
+    --dark-grey: #d9d9d9;
+    --grey:#F2F2F2;
+}
+::selection {
+    background-color:var(--selection-color);
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+h1,
+h2 {
+    font-style: bold;
+}
+h1 {
+    font-size: 22px;
+}
+.filter-button {
+    border: solid 2px var(--tertiary-color);
+    border-radius: 25px;
+    position: absolute;
+}
+i {
+    color: var(--primary-color);
+}
+.position-search{
+    position:absolute;
+    background: var(--grey);
+    border: 1px solid var(--grey);
+    border-radius: 15px 0px 0px 15px;
+}
+.search{
+    position:absolute;
+    background: white;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+}
+.search-button{
+    /*display:flex
+    flex-direction:row
+    align-items:center
+    padding: 15px 16px
+    gap:10px*/
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0px 15px 15px 0px;
+}
