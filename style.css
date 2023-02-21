@@ -3,6 +3,8 @@
     --selection-color:#deebff;
     --dark-grey: #d9d9d9;
     --grey:#F2F2F2;
+    max-width: 1400px;
+    margin:auto
 }
 ::selection {
     background-color:var(--selection-color);
@@ -48,3 +50,29 @@ i {
     border: 1px solid var(--primary-color);
     border-radius: 0px 15px 15px 0px;
 }
+
+/*header*/
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+max-width: 61px;
+}
+li{
+    display: inline;
+    list-style-type:none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    padding:20px
+}
+a:hover{
+    border-top: solid 2px var(--primary-color);
+    color:var(--primary-color)
+}
+/*header*/
