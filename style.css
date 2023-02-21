@@ -28,28 +28,6 @@ h1 {
 i {
     color: var(--primary-color);
 }
-.position-search{
-    position:absolute;
-    background: var(--grey);
-    border: 1px solid var(--grey);
-    border-radius: 15px 0px 0px 15px;
-}
-.search{
-    position:absolute;
-    background: white;
-    border: 1px solid var(--grey);
-    border-radius: 15px;
-}
-.search-button{
-    /*display:flex
-    flex-direction:row
-    align-items:center
-    padding: 15px 16px
-    gap:10px*/
-    background: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    border-radius: 0px 15px 15px 0px;
-}
 
 /*header*/
 nav{
@@ -76,3 +54,35 @@ a:hover{
     color:var(--primary-color)
 }
 /*header*/
+
+
+form{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.position-search{
+    display:flex;
+    background: var(--grey);
+    border-radius: 15px 0px 0px 15px;
+    padding: 16px;
+}
+
+input{
+    border:none;
+}
+
+.form{
+    display:flex;
+    border:1px solid var(--grey);
+    padding: 15px;
+}
+
+.search-button{
+    display:flex;
+    background: var(--primary-color);
+    border-radius: 0px 15px 15px 0px;
+    color:white;
+    padding:10px
+
+}
