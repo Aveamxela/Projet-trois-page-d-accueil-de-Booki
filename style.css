@@ -115,3 +115,18 @@ i {
     padding: 10px 0px 10px 10px;
     gap: 10px
 }
+/*header_filters*/
+
+.search-result{
+    display:flex;
+    align-items: center;    
+}
+
+.fa-info{
+    max-width: 24px;
+    display:flex;
+    align-items: center;
+    border: solid 2px red;
+    border-radius:20px;
+    object-fit:contain;
+}
