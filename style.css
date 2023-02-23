@@ -143,7 +143,7 @@ i {
     border-radius: 20px;
     padding: 40px;
     gap:10px;
-    max-width: 65%;
+    width: 65%;
 }
 .all-card {
     display: flex;
@@ -199,6 +199,17 @@ i[data-active="false"] {
 }
 
 /*hébergement+populaire*/
+
+/* hebergement+popuplaire-TABLETTE*/
+@media screen and (max-width:992px){
+    .hebergement-populaire{
+        flex-direction:column;
+    }
+    .hebergement{
+        width: 100%;
+    }
+}
+/* hebergement+popuplaire-TABLETTE*/
 
 /*Les plus populaires*/
 .populaire {
