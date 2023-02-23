@@ -69,6 +69,7 @@ input {
     display: flex;
     border: 1px solid var(--grey);
     padding: 15px;
+    margin:0%
 }
 
 button {
