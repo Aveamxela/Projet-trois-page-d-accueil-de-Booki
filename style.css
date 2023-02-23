@@ -127,8 +127,10 @@ i {
     height: 24px;
     display: flex;
     align-items: center;
-    border: 2px solid red;
+    justify-content: center;
+    border: 2px solid var(--dark-grey);
     border-radius: 20px;
+    margin-right: 10px;
 }
 /*header_search_result*/
 
@@ -192,7 +194,7 @@ i[data-active="false"] {
     display: flex;
     flex-direction: row;
     gap: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 /*hébergement+populaire*/
@@ -245,10 +247,8 @@ i[data-active="false"] {
 .activite{
     display: flex;
     flex-direction: column;
-    background-color: var(--grey);
     border-radius: 20px;
-    padding:40px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .card-activite{
@@ -268,3 +268,20 @@ i[data-active="false"] {
     object-fit: cover;
 }
 /*Activités*/
+
+/*footer*/
+.all-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+    padding:20px;
+    margin-top: 40px;
+}
+.column-footer{
+    display:flex ;
+    flex-direction: row;
+    gap:20%;
+    
+
+}
+/*footer*/
