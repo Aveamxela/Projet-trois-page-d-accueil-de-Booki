@@ -14,11 +14,11 @@ body {
 
 h1 {
     font-size: 22px;
-    font-style: bold;
+    font-weight: bold;
 }
 h2 {
     font-size: 16px;
-    font-style: bold;
+    font-weight: bold;
 }
 
 /*header_nav*/
@@ -156,7 +156,7 @@ i {
 .card {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: start;
     background-color: white;
     min-width: 246px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -164,7 +164,7 @@ i {
 }
 
 .img-hebergement {
-    width: 100%;
+    width: 246px;
     max-height: 124px;
     border: 5px solid #ffffff;
     border-radius: 20px 20px 0px 0px;
@@ -238,7 +238,7 @@ i[data-active="false"] {
 .container-populaire {
     display: flex;
     flex-direction: column;
-    align-items:left;
+    align-items:start;
     justify-content: space-between;
     padding:10px;
 }
