@@ -24,7 +24,6 @@ h2 {
 /*header_nav*/
 nav {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
     justify-content: space-between;
@@ -55,7 +54,6 @@ form {
     align-items: center;
 }
 .position-search {
-    display: flex;
     background: var(--grey);
     border-radius: 15px 0px 0px 15px;
     padding: 16px;
@@ -67,35 +65,58 @@ input {
 }
 
 .form {
-    display: flex;
     border: 1px solid var(--grey);
     padding: 15px;
-    margin:0%
+    margin:0;
 }
-
-button {
-    display: flex;
+button{
+    padding: 0;
+    border: 0;
+    background: none;
+}
+.button-desktop {
     background: var(--primary-color);
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--primary-color);
     color: white;
     padding: 16px;
 }
+.button-mobile{
+    display: none;
+    background: var(--primary-color);
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid var(--primary-color);
+    color: white;
+    padding: 16px;
+}
+.fa-magnifying-glass{
+    color: #ffffff;
+    width: auto;
+    height: auto;
+}
 /*header_search*/
 
 /*header_filters*/
 .filter {
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 40px;
     padding-top: 30px;
 }
 .filter-all-buttons {
     display: flex;
-    width: 100%;
+    flex-direction: row;
     gap: 30px;
 }
+.row1{
+    display: flex;
+    gap:30px;
+}
+.row2{
+    display:flex ;
+    gap:30px;
+}
+
 .filter-button {
     display: flex;
     align-items: center;
@@ -103,6 +124,7 @@ button {
     border: solid 2px var(--dark-grey);
     border-radius: 25px;
     padding: 4px 20px;
+    margin-bottom:10px;
 }
 .filter-button:hover {
     background-color: var(--selection-color);
@@ -110,8 +132,8 @@ button {
 
 i {
     color: var(--primary-color);
-    width: 22px;
-    height: 22px;
+    width: auto;
+    height: auto;
 }
 .filter-text {
     padding: 10px 0px 10px 10px;
@@ -316,10 +338,12 @@ i[data-active="false"] {
         width: 100%;
     }
     .hebergement{
-        width: 90%;
+        width: 100%;
+        box-sizing: border-box;
     }
     .populaire{
-        width:90% ;
+        width:100% ;
+        box-sizing: border-box;
     }
     .all-card-populaire{
         flex-direction: row;;
@@ -330,8 +354,122 @@ i[data-active="false"] {
         width: 20%;
     }
     .all-footer{
-        width: 95%;
+        box-sizing: border-box;
     }
-   
 }
 /*TABLETTE*/
+
+/*MOBILE*/
+@media screen and (max-width:768px){
+   
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        padding: 0;
+    }
+    .menu:hover {
+    border-bottom: solid 2px var(--primary-color);
+    border-top: 0px;
+    }
+   
+    .form{
+        width:100%;
+    }
+    section{
+        width: 100%;
+    }
+   .button-desktop{
+    display: none;
+   }
+   .button-mobile{
+    display: block;
+   }
+    .filter{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap:0;
+    }
+    .filter-all-buttons{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        gap:30px;
+    }
+    .filter-button{
+    width: 160px;
+    }
+    .hebergement-populaire{
+        display:flex;
+        flex-direction: column;
+        margin:0;
+        width: 100%;
+    }
+    .hebergement{
+        width:100%;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        order:2;
+    }
+    .all-card{
+        flex-direction: column;
+        height: 100%;
+        }
+    .card {
+            flex-direction: column;
+            width: 100%;
+        }
+    .img-hebergement{
+        height: 124px;
+    }
+    .populaire{
+        width: 100%;
+        box-sizing: border-box;
+        order:1;
+    }
+    .card-populaire {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+    .img-populaire{
+    width:30%;
+    aspect-ratio: 2/4;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 0px 20px;
+    box-sizing: border-box;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.all-card-activite{
+    flex-direction: column;
+}
+.card-activite{
+    width: 100%;
+    height: 190px;
+}
+.all-footer{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--grey);
+    padding:20px;
+    margin-top: 40px;
+}
+.column-footer{
+    display:flex ;
+    flex-direction: column;
+    gap:20%;
+    
+
+}
+
+}
+   
+
+
+/*MOBILE*/
